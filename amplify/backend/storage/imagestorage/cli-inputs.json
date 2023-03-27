@@ -1,0 +1,16 @@
+{
+  "resourceName": "imagestorage",
+  "policyUUID": "90a5eb57",
+  "bucketName": "amplify-monday-rennay-test-bucket",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

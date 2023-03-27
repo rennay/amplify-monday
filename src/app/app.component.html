@@ -1,4 +1,4 @@
-<amplify-authenticator>
+<amplify-authenticator [loginMechanisms]="['email']">
   <ng-template
     amplifySlot="authenticated"
     let-user="user"
@@ -6,5 +6,11 @@
   >
     <h1>Welcome {{ user.username }}!</h1>
     <button (click)="signOut()">Sign Out</button>
+
+    <button (click)="storage()">Storage</button>
+
+    <input type="file" (change)='handleFileInput($event)' />;
+
+
   </ng-template>
 </amplify-authenticator>
